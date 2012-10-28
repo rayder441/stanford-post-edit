@@ -1,0 +1,7 @@
+English source data
+
+This directory contains the following files:
+
+  source.en.txt          The English source segments
+  source.en.meta.txt	 Origin of each source segment (see google-translate directory)
+  source.en.corenlp.txt  POS tagging from Stanford CoreNLP

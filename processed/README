@@ -1,0 +1,37 @@
+This directory contains source and target translation information in pre-processed into CSV files. These files can be imported into R or other similar statistics packages for analysis.
+
+  source_frame.csv -- Metadata about each source (English) sentence
+  trans_frame.{ar,fr,de}.csv -- Metadata about each translation
+
+The columns in source_frame.csv are:
+
+  src_id             Unique integer identifying each source sentence
+  src_len	     Source length in tokens
+  syn_complexity     Syntactic complexity measure of Lin (1996)
+  cnt_entity_tokens  # of named entity tokens
+  mean_lexical_freq  Mean lexical frequency relative to English Gigaword
+  cnt_vb	     # of verb tokens
+  cnt_nn	     # of nominal tokens
+  cnt_jj	     # of adjectival tokens
+  cnt_adv	     # of adverbial tokens
+
+The columns in trans_frame.{ar,fr,de}.csv are:
+
+  time	             Time in milliseconds
+  prev_time	     Time of the previous translation (in milliseconds)
+  pause_mean	     Mean pause length (300ms minimum)
+  pause_cnt	     Mean pause count (300ms minimum)
+  pause_cnt1s	     Mean pause count (1000ms minimum)
+  pause_ratio	     Pause ratio (300ms minimum)
+  pause_ratio1s	     Pause ratio (1000ms minimum)
+  event_cnt	     # of Javascript events
+  event_keyboard_cnt # of Javascript keyboard events
+  event_mouse_cnt    # of Javascript mouse events
+  event_focus_cnt    # of Javascript focus events
+  event_browser_cnt  # of Javascript browser events
+  src_id	     Corresponds to src_id in source_frame.csv
+  ui_id		     1: unaided; 2: post-edit
+  tgt_len	     Target length in tokens
+  user_id	     Corresponds to user_id in user_frame.csv
+  edit_distance	     Damerau-Levenshtein edit distance from the Google suggestion
+  rank		     Sentence-level translation rank (1 is highest)

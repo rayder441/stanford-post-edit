@@ -1,0 +1,27 @@
+The files in this directory contain metadata about the subjects who submitted translations:
+
+  country-list.csv -- Mapping of country ids to country names
+  user_frame.csv   -- Each row contains information about a subject
+
+The columns in user_frame.csv are:
+
+  user_id           Unique user id
+  tgt_lang	    ISO 639-1 target language code
+  en_level	    English proficiency in range [1,5] (self-reported)
+  hourly_rate	    Hourly oDesk rate
+  en_spell	    oDesk English spelling test score [1,5]
+  en_vocab	    oDesk English vocabulary test score [1,5]
+  en_skills	    oDesk English basic skills test score [1,5]
+  en_usage	    oDesk English word usage test score [1,5]
+  en_ar_trans	    oDesk English-Arabic translation test score [1,5]
+  fr_spell	    oDesk French spelling test score [1,5]
+  fr_vocab	    oDesk French vocabulary test score [1,5]
+  fr_usage	    oDesk French word usage test score [1,5]
+  en_fr_trans	    oDesk English-French translation test score [1,5]
+  de_spell	    oDesk German spelling test score [1,5]
+  de_vocab	    oDesk German vocabulary test score [1,5]
+  en_de_trans	    oDesk English-German translation test score [1,5]
+  birth_country	    Birth country id (self-reported)
+  home_country	    Resident country id (self-reported)
+  hours_per_week    Hours worked per week as a stranslator (self-reported)
+  is_pro	    Is the subject a professional translator (self-reported)
