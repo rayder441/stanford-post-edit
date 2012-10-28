@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # Corresponds to the order in which source documents
-# were loaded into the db. See setup_default_db.sh.
+# appear in source.en.txt 
 #
 cat Flag_of_Japan_Wikipedia.ar Schizophrenia_Wikipedia.ar Infinite_monkey_theorem_Wikipedia.ar 1896_Summer_Olympics_Wikipedia.ar > ar.ref
 

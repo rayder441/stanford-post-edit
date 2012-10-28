@@ -1,3 +1,5 @@
+Human Subjects Metadata
+
 The files in this directory contain metadata about the subjects who submitted translations:
 
   country-list.csv -- Mapping of country ids to country names
@@ -23,5 +25,5 @@ The columns in user_frame.csv are:
   en_de_trans	    oDesk English-German translation test score [1,5]
   birth_country	    Birth country id (self-reported)
   home_country	    Resident country id (self-reported)
-  hours_per_week    Hours worked per week as a stranslator (self-reported)
+  hours_per_week    Hours worked per week as a translator (self-reported)
   is_pro	    Is the subject a professional translator (self-reported)
